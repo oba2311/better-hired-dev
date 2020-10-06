@@ -16776,6 +16776,11 @@ hr {
   left: -3px;
 }
 
+
+.table>tbody>tr>th{
+  color: white;
+}
+
 .table>thead>tr>th,
 .table>tbody>tr>th,
 .table>tfoot>tr>th,
@@ -16817,6 +16822,12 @@ hr {
 
 .table>tbody>tr {
   position: relative;
+}
+
+/* highlight one row: */
+.table>tbody>tr.first {
+  position: relative;
+  background-color: #0666c2;
 }
 
 .table>tfoot>tr {

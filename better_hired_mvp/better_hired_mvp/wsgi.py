@@ -11,7 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'better_hired_mvp.better_hired_mvp.settings')
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'better_hired_mvp.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'better_hired_mvp.settings')
 
 application = get_wsgi_application() 

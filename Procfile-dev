@@ -1,3 +1,0 @@
-web: gunicorn better_hired_mvp.better_hired_mvp.wsgi
-
-python manage.py collectstatic --noinput;

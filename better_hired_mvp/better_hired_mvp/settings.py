@@ -36,7 +36,7 @@ if ALLOWED_HOSTS_ENV:
 # Application definition
 
 INSTALLED_APPS = [
-    'better_hired_mvp.bh.apps.BhConfig',
+    'bh.apps.BhConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'better_hired_mvp.better_hired_mvp.urls'
+ROOT_URLCONF = 'better_hired_mvp.urls'
 
 TEMPLATES = [
     {

@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from better_hired_mvp.bh import views
+from bh import views
 
 
 urlpatterns = [
