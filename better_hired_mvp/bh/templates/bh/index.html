@@ -1,0 +1,275 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+<style>
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+
+  ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+
+  ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  ul.timeline>li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+</style>
+
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="row">
+  <div class="col-12">
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="card-title"> My Companies</h4>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"># </th>
+              <th scope="col">Company</th>
+              <th scope="col">Role</th>
+              <th scope="col">POC</th>
+              <th scope="col">Location</th>
+              <th scope="col">Status</th>
+              <th scope="col">My Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="first">
+              <th scope="row">1</th>
+              <td>Monday</td>
+              <td>Product Manager</td>
+              <td>HR</td>
+              <td>Tel-Aviv</td>
+              <td>Applied online waiting for a call</td>
+              <td>Greath Company, heard from friends.</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>PayPal</td>
+              <td>Technical Product Manager</td>
+              <td>HR / Hila</td>
+              <td>Tel-Aviv</td>
+              <td>Thinking of applying</td>
+              <td>Good for resume</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- second row: -->
+
+<div class="row">
+  <div class="col-6">
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="card-title"> Your journey with Monday</h4>
+
+        <div class="alert alert-primary">
+          <b> YOUR STATUS:</b>
+          <br>
+          Following our phone interview, we would like to extend an offer and meet on site for the
+          next round of interviews.
+          <br>
+          <br>
+          <b> NEXT ROUND:</b>
+          On site: Product Leadership
+          <br>
+          <br>
+          <b> WHAT TO EXPECT:</b>
+          <br>
+          Our onsite interviews are meant to check 3 characteristics of a PM:
+          <ul>
+            <li>1. asdf. The task we use to evaluate this aspect is XY.</li>
+            <li>2. asdf</li>
+            <li>3. asdf</li>
+        </ul>
+        <br>
+          <b> ASK FRIENDS WHO INTERVIEWED WITH THIS COMPANY:</b>
+
+          <!--from  https://mdbootstrap.com/snippets/jquery/ascensus/127174 -->
+
+          <div class="container">
+            <!--Grid row-->
+            <div class="row text-center">
+              <!--Grid column-->
+        
+              <!--Grid column-->
+              <!-- <div class="col-md-3 mb-4"> -->
+                <div class="col">
+                  <!-- <div class="w-100"></div> -->
+
+                <h2 class="my-2 h4">Amie Zlatner</h2>
+        
+                <img class="rounded-circle z-depth-2" alt="50x50" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
+                  data-holder-rendered="true">
+
+              </div>
+              <!--Grid column-->
+              <!-- <div class="col-md-3 mb-4"> -->
+                <div class="col">
+                <h2 class="my-2 h4">Johny Bryce</h2>
+        
+                <img class="rounded-circle" alt="100x100" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                data-holder-rendered="true">
+
+              </div>
+            </div>
+            <!--Grid row-->
+        
+          </div>
+<br>
+
+          <b> Talk to Efrat / PM Recruiter from Monday:</b>
+
+          <br>
+          <br>
+
+
+<!--  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+	<!-- <div class="row"> -->
+                 
+                 <!-- <div class="col-sm-8"> -->
+                  <div class="chatbody">
+                  <div class="panel panel-primary">
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input " placeholder="Any questions for Efrat?" />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat"><i class="fa fa-send fa-1x" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div>
+    		</div>
+
+                 </div>
+             </div>
+
+<!--  -->
+
+        </div>
+      </div>
+      <div class="card-body">
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card ">
+      <div class="card-header">
+        <h4 class="card-title"> Process & Status</h4>
+
+      </div>
+      <div class="card-body">
+
+        <!-- https://bootsnipp.com/snippets/xrKXW -->
+        <div class="col-md-14 offset-md-16">
+          <h4>Latest News</h4>
+          <ul class="timeline">
+            <li>
+              <a target="_blank" href="http://127.0.0.1:800">CV Recieved -- </a>
+              <a href="#">21 March, 2014</a>
+              <a class="float-right"> all applicants</a>
+
+              <p>
+                <br>
+                The company has recieved your cv.</p>
+            </li>
+            <li>
+              <a target="_blank" href="http://127.0.0.1:800">Phone Interview Scheduled -- </a>
+              <a href="#">21 March, 2014</a>
+              <a class="float-right"> 58% of applicants</a>
+              <p>
+                <br>
+                The company has decided to reach out and start a process with you. Great!.</p>
+            </li>
+            <li>
+              <a target="_blank" href="http://127.0.0.1:800">On-site: Product Execution -- </a>
+              <a href="#">21 March, 2014</a>
+              <a class="float-right"> 43% of applicants</a>
+              <p>
+                <br>
+                Based on your performance on the call, the PM interviewing you might decide to invite you over
+                to an onsite interview for 1 hour. etc.....</p>
+            </li>
+            <li>
+              <a target="_blank" href="http://127.0.0.1:800">Offer -- </a>
+              <a href="#">TBD</a>
+              <a class="float-right"> 13% of applicants</a>
+              <p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+<script>
+  $(document).ready(function () {
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initDashboardPageCharts();
+
+  });
+</script>
+
+{% endblock javascripts %}
+
+
+/* <!-- {% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="/bh/{{ question.id }}/">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %} --> */
